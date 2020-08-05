@@ -1,4 +1,4 @@
-# Android Developer Fundamentals v2 Course Praticals and Notes
+# Android Developer Fundamentals v2 Course Practicals and Notes
 
 This repository contains all the answers and notes to the codelabs for [Google's Android Developer Fundamentals Java (v2)](https://developer.android.com/courses/fundamentals-training/overview-v2).
 
