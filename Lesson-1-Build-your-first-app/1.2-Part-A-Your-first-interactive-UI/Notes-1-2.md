@@ -133,3 +133,27 @@ use the `android:onClick` attribute in the XML layout.
 ## Updating a View
 
 - Obtain the `View` object by using `findViewById()` method in `Activity`
+
+## Positioning a View
+
+### LinearLayout positioning
+
+LinearLayout is required to have these attributes set:
+
+- `android:layout_width`
+- `android:layout_height`
+- `android:orientation`: `horizontal`, `vertical`
+
+Other layout-related attributes include:
+- `android:layout_gravity`: used with a UI element to control where the element is arranged within its parent.
+
+### RelativeLayout Positioning
+
+use to position child View elements relative to each other or to the parent.
+
+- `android:layout_toLeftOf`: Positions the right edge of this `View` to the left of another `View` (identified by its ID).
+- `android:layout_toRightOf`: Positions the left edge of this `View` to the right of another `View` (identified by its ID).
+- `android:layout_centerHorizontal`: Centers this `View` horizontally within its parent.
+- `android:layout_centerVertical`: Centers this `View` vertically within its parent.
+- `android:layout_alignParentTop`: Positions the top edge of this `View` to match the top edge of the parent.
+- `android:layout_alignParentBottom`: Positions the bottom edge of this `View` to match the bottom edge of the parent.
