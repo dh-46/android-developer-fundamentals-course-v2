@@ -203,6 +203,7 @@ Android system supports two different forms of navigation strategies:
 - From child Activity to parent Activity. (E.g.: PaymentActivity back to MainActivity)
 - The behavior of the Up button is defined by you in each Activity based on how you design your app's navigation.
 - is optional in app design
+- this method will always recreate the parent Activity. If you want to reuse the parent Activity (onResume), you should set parent Activity's launch mode to "singleTop"
 
 #### Implement Up navigation with a parent Activity
 
