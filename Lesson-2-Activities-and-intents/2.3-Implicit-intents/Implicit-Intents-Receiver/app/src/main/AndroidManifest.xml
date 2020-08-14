@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tw.dh46.codelab.implicitintentsreceiver">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <!--  indicates that this Activity is the main entry point for your app -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- this Activity should appear as a top-level item in the launcher -->
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+            <intent-filter>
+                <!-- Indicate Any Intent with view actions. -->
+                <action android:name="android.intent.action.VIEW" />
+                <!-- Any implicit Intent.
+                This category must be included for your Activity to receive any implicit Intent.  -->
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- Requests for browsable links from web pages, email, or other sources.  -->
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- URIs that contain a scheme of http and a host name of developer.android.com. -->
+                <data
+                    android:host="developer.android.com"
+                    android:scheme="http" />
+                <!-- data tag has a restriction on both the kind of links it will accept and the hostname for those URIs  -->
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
