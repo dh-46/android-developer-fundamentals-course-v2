@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PickerForTime</string>
+    <string name="text_welcome">Hello World! Choose a Time:</string>
+</resources>
